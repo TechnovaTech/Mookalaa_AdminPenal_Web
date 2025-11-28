@@ -21,7 +21,7 @@ import {
 } from 'lucide-react'
 
 const menuItems = [
-  { icon: BarChart3, label: 'Dashboard', href: '/' },
+  { icon: BarChart3, label: 'Dashboard', href: '/dashboard' },
   { 
     icon: Users, 
     label: 'User Management', 
@@ -70,7 +70,7 @@ export default function Sidebar() {
   // Set active item based on current URL
   React.useEffect(() => {
     const path = window.location.pathname
-    if (path === '/') setActiveItem('Dashboard')
+    if (path === '/' || path === '/dashboard') setActiveItem('Dashboard')
     else if (path === '/users') setActiveItem('All Users')
     else if (path === '/artists') setActiveItem('Artists')
     else if (path === '/organizers') setActiveItem('Organizers')

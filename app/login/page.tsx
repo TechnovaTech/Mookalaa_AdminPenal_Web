@@ -10,7 +10,7 @@ export default function Login() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
     // Redirect to dashboard after login
-    window.location.href = '/'
+    window.location.href = '/dashboard'
   }
 
   return (
