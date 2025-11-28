@@ -8,7 +8,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Your custom color palette
         'deep-blue': '#0A1172',
         'teal': '#0E7C7B',
         'silver': '#C0C0C0',
